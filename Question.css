@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scrollbar-width: hidden;
+}
+:root{
+    --lvv-color-text-1: #e6e6e6;
+    --lvv-color-text-2: #afafb6;
+    --lvv-color-text-3: #7a7a85;
+    --lvv-color-text-4: #646568;
+    --lvv-color-text-5: #44444b;
+    --lvv-color-text-inverted: #16161d;
+    --lvv-color-bg-1: #121217;
+    --lvv-color-bg-2: #1c1c21;
+    --lvv-color-bg-3: #28282e;
+    --lvv-color-bg-4: #303036;
+    --lvv-color-bg-5: #43434c;
+    --lvv-color-bg-6: #f3f3f3;
+    --base-blue: #1877F2;
+    --base-cherry: #F3425F;
+    --base-grape: #9360F7;
+    --base-lemon: #F7B928;
+    --base-lime: #45BD62;
+    --base-pink: #FF66BF;
+    --base-seafoam: #54C7EC;
+    --base-teal: #2ABBA7;
+    --base-tomato: #FB724B;
+    --blue-link: #4599FF;
+    --event-date: #F3425F;
+    --lvv-color-main-alpha-1: rgba(31,196,217,.12);
+    --lvv-color-main-alpha-2: rgba(31,196,217,.2);
+    --lvv-color-main-alpha-3: rgba(31,196,217,.4);
+    --lvv-color-main-alpha-4: rgba(31,196,217,.6);
+    --lvv-color-main-alpha-5: rgba(31,196,217,.8);
+    --lvv-color-bg-field: hsla(0,0%,100%,.04);
+    --lvv-color-line-1: hsla(0,0%,100%,.2);
+    --lvv-color-line-2: hsla(0,0%,100%,.12);
+    --lvv-color-line-3: hsla(0,0%,100%,.06);
+    --lvv-color-common-yellow-1: #ff832a;
+    --lvv-color-common-red-1: #fc5d5b;
+    --lvv-color-common-pink-1: #f75997;
+    --lvv-color-common-purple-1: #b75cff;
+    --lvv-color-common-deep-purple-1: #7d5cff;
+    --lvv-color-common-blue-0: #4F9BFF;
+    --lvv-color-common-blue-1: #5b8fff;
+    --lvv-color-common-blue-2: #243c58;
+    --lvv-color-common-blue-3: #42566e;
+    --lvv-color-common-green-1: #00be93;
+    --lvv-color-common-pro-1: #caa06d;
+    --lvv-color-negative-1: #ffe6e3;
+    --lvv-color-negative-2: #ff9b99;
+    --lvv-color-negative-3: #ff6663;
+    --lvv-color-negative-4: #db4852;
+    --lvv-color-negative-5: #800a12;
+    --lvv-color-warning-1: #fff7e5;
+    --lvv-color-warning-2: #ffd670;
+    --lvv-color-warning-3: #ffaf02;
+    --lvv-color-warning-4: #fb9600;
+    --lvv-color-warning-5: #996900;
+    --lvv-color-positive-1: #d5f6ea;
+    --lvv-color-positive-2: #85eabc;
+    --lvv-color-positive-3: #2dd196;
+    --lvv-color-positive-4: #20b38d;
+    --lvv-color-positive-5: #136852;
+    --lvv-color-info-1: #e0e8ff;
+    --lvv-color-info-2: #82a1ff;
+    --lvv-color-info-3: #597eff;
+    --lvv-color-info-4: #415fdb;
+    --lvv-color-info-5: #132467;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Ramabhadra', sans-serif;
+    font-family: 'Noto Sans Khmer', sans-serif;
+}
+body{
+    height: auto;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: 15px;
+    font-family: 'Albert Sans', sans-serif;
+    color: var(--lvv-color-text-1);
+    background-color: var(--lvv-color-bg-1);
+}
+
+.welcome{
+    width: 100%;
+    height: auto;
+    padding: 1% 0%;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 20%);
+    background-color: var(--event-date);
+}
+
+.welcome > h2{
+    font-size: 9vmin;
+    color: var(--lvv-color-text-1);
+}
+
+.welcome > .p{
+    font-size: 20px;
+    color: var(--lvv-color-text-1);
+    font-family: 'Suwannaphum', serif;
+}
+
+.content-man{
+    padding: 1% 0%;
+}
+
+.my-content-see{
+    width: 50%;
+    padding: 2% 1%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1%;
+    background: var(--lvv-color-bg-2);
+    border-radius: 7px;
+}
+
+.my-content-see > h2{
+    color: var(--lvv-color-common-blue-0);
+    font-size: 18px;
+    font-family: 'Suwannaphum', serif;
+}
+
+.my-content-see > h2 > span
+ {
+    font-size: 13px;
+    color: #ffffff;
+    box-shadow: 0 1px 8px rgb(124 124 124 / 19%);
+    border-radius: 25px;
+    padding: 2.6px 2.5px;
+}
+.content {
+    margin-top: 1%;
+}
+.content > p{
+    color: var(--lvv-color-text-2);
+    font-size: 14px;
+    font-family: 'Kantumruy', sans-serif;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+label > p{
+    margin-top: -3%;
+    text-align: right;
+    cursor: pointer;
+}
+
+#school , #live ,#meet,#single{
+    display: none;
+}
+
+.content {
+    display: none;
+    transition: 0.5 linear;
+}
+
+#school:checked ~ .content{
+    display: block;
+}
+#school:checked ~ label{
+    visibility: hidden;
+}
+#school:checked ~ label> p >span::after{
+    margin-top: -2%;
+    content: 'expand_less';
+    display: block;
+    cursor: pointer;
+    visibility: visible;
+}
+
+
+#live:checked ~ .content{
+    display: block;
+}
+#live:checked ~ label{
+    visibility: hidden;
+}
+#live:checked ~ label> p >span::after{
+    margin-top: -2%;
+    content: 'expand_less';
+    display: block;
+    cursor: pointer;
+    visibility: visible;
+}
+
+#meet:checked ~ .content{
+    display: block;
+}
+#meet:checked ~ label{
+    visibility: hidden;
+}
+#meet:checked ~ label> p >span::after{
+    margin-top: -2%;
+    content: 'expand_less';
+    display: block;
+    cursor: pointer;
+    visibility: visible;
+}
+
+#single:checked ~ .content{
+    display: block;
+}
+#single:checked ~ label{
+    visibility: hidden;
+}
+#single:checked ~ label> p >span::after{
+    margin-top: -2%;
+    content: 'expand_less';
+    display: block;
+    cursor: pointer;
+    visibility: visible;
+}
+
+#makefor{
+    display: none;
+}
+#makefor:checked ~ .content{
+    display: block;
+}
+#makefor:checked ~ label{
+    visibility: hidden;
+}
+#makefor:checked ~ label> p >span::after{
+    margin-top: -2%;
+    content: 'expand_less';
+    display: block;
+    cursor: pointer;
+    visibility: visible;
+}
+
+#makby{
+    display: none;
+}
+#makby:checked ~ .content{
+    display: block;
+}
+#makby:checked ~ label{
+    visibility: hidden;
+}
+#makby:checked ~ label> p >span::after{
+    margin-top: -2%;
+    content: 'expand_less';
+    display: block;
+    cursor: pointer;
+    visibility: visible;
+}
+
+#Newtoday{
+    display: none;
+}
+#Newtoday:checked ~ .content{
+    display: block;
+}
+#Newtoday:checked ~ label{
+    visibility: hidden;
+}
+#Newtoday:checked ~ label> p >span::after{
+    margin-top: -2%;
+    content: 'expand_less';
+    display: block;
+    cursor: pointer;
+    visibility: visible;
+}
+
+#intergn{
+    display: none;
+}
+#intergn:checked ~ .content{
+    display: block;
+}
+#intergn:checked ~ label{
+    visibility: hidden;
+}
+#intergn:checked ~ label> p >span::after{
+    margin-top: -2%;
+    content: 'expand_less';
+    display: block;
+    cursor: pointer;
+    visibility: visible;
+}
+
+#intergntoday{
+    display: none;
+}
+#intergntoday:checked ~ .content{
+    display: block;
+}
+#intergntoday:checked ~ label{
+    visibility: hidden;
+}
+#intergntoday:checked ~ label> p >span::after{
+    margin-top: -2%;
+    content: 'expand_less';
+    display: block;
+    cursor: pointer;
+    visibility: visible;
+}
+
+#Useit{
+    display: none;
+}
+#Useit:checked ~ .content{
+    display: block;
+}
+#Useit:checked ~ label{
+    visibility: hidden;
+}
+#Useit:checked ~ label> p >span::after{
+    margin-top: -2%;
+    content: 'expand_less';
+    display: block;
+    cursor: pointer;
+    visibility: visible;
+}
+
+#discoun{
+    display: none;
+}
+#discoun:checked ~ .content{
+    display: block;
+}
+#discoun:checked ~ label{
+    visibility: hidden;
+}
+#discoun:checked ~ label> p >span::after{
+    margin-top: -2%;
+    content: 'expand_less';
+    display: block;
+    cursor: pointer;
+    visibility: visible;
+}
+
+#getdis{
+    display: none;
+}
+#getdis:checked ~ .content{
+    display: block;
+}
+#getdis:checked ~ label{
+    visibility: hidden;
+}
+#getdis:checked ~ label> p >span::after{
+    margin-top: -2%;
+    content: 'expand_less';
+    display: block;
+    cursor: pointer;
+    visibility: visible;
+}
+
+#fclass{
+    display: none;
+}
+#fclass:checked ~ .content{
+    display: block;
+}
+#fclass:checked ~ label{
+    visibility: hidden;
+}
+#fclass:checked ~ label> p >span::after{
+    margin-top: -2%;
+    content: 'expand_less';
+    display: block;
+    cursor: pointer;
+    visibility: visible;
+}
+
+#wblncode{
+    display: none;
+}
+#wblncode:checked ~ .content{
+    display: block;
+}
+#wblncode:checked ~ label{
+    visibility: hidden;
+}
+#wblncode:checked ~ label> p >span::after{
+    margin-top: -2%;
+    content: 'expand_less';
+    display: block;
+    cursor: pointer;
+    visibility: visible;
+}
+
+#sdtclass{
+    display: none;
+}
+#sdtclass:checked ~ .content{
+    display: block;
+}
+#sdtclass:checked ~ label{
+    visibility: hidden;
+}
+#sdtclass:checked ~ label> p >span::after{
+    margin-top: -2%;
+    content: 'expand_less';
+    display: block;
+    cursor: pointer;
+    visibility: visible;
+}
+
+@media only screen and  (max-width:1280px) {
+    .my-content-see{
+        width: 80%;
+    }
+}
+
+@media only screen and  (max-width:708px) {
+    .my-content-see{
+        width: 90%;
+    }
+    .welcome > h2 {
+        font-size: 6vmin;
+    }
+    .welcome > .p {
+        font-size: 18px;
+    }
+}
+@media only screen and  (max-width:460px) {
+    .my-content-see{
+        margin-top: 1%;
+        width: 95%;
+    }
+    .my-content-see >h2 {
+        font-size: 15px;
+    }
+    .post > p {
+        text-align: justify;
+        font-size: 12px;
+        font-family: 'Kantumruy', sans-serif;
+    }
+
+    #school:checked ~ label{
+        display: none;
+    }
+    #live:checked ~ label{
+        display: none;
+    }
+    #meet:checked ~ label{
+        display: none;
+    }
+    #single:checked ~ label{
+        display: none;
+    }
+    #makefor:checked ~ label{
+        display: none;
+    }
+    #makby:checked ~ label{
+        display: none;
+    }
+    #Newtoday:checked ~ label{
+        display: none;
+    }
+    #intergn:checked ~ label{
+        display: none;
+    }
+    #intergntoday:checked ~ label{
+        display: none;
+    }
+    #Useit:checked ~ label{
+        display: none;
+    }
+    #discoun:checked ~ label{
+        display: none;
+    }
+    #getdis:checked ~ label{
+        display: none;
+    }
+    #fclass:checked ~ label{
+        display: none;
+    }
+    #wblncode:checked ~ label{
+        display: none;
+    }
+    #sdtclass:checked ~ label{
+        display: none;
+    }
+    
+}
